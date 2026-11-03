@@ -36,7 +36,7 @@ const pages = [
     image: '/og/default.png',
     note: 'My Android work, all in one place:',
   },
-  projectPage('phone-call'),
+  projectPage('vidix-ai-video-generator'),
   postPage('pdf-editor-pdfjs-webview-android'),
 ]
 const platforms = [

@@ -27,14 +27,18 @@ const searches = [
         { to: '/blog', label: 'Dev Notes', text: 'Technical articles' },
         { to: '/contact', label: 'Contact', text: 'Hire for a project' },
       ]),
-      app('phone-call'),
+      app('phone-dialer-contacts-calls'),
       post('shipping-android-apps-template-remote-config-baseline-profiles'),
     ],
   },
   {
-    label: 'chirag jethva jetpack compose',
-    words: ['compose', 'jetpack', 'ui', 'material', 'sms', 'messages', 'gallery', 'photo'],
-    results: [app('messages-compose'), app('gallery-pro'), page('/projects', 'Projects — Chirag Jethva', 'Every app, grouped by status, with a case study for each.')],
+    label: 'chirag jethva apps',
+    words: ['apps', 'play', 'store', 'gallery', 'photo', 'video', 'vidix', 'vault', 'fashion', 'zenzi', 'alarm', 'calculator'],
+    results: [
+      app('vidix-ai-video-generator'),
+      app('gallery-locker'),
+      page('/projects', 'Projects — Chirag Jethva', 'Every app, grouped by status, with a case study for each.'),
+    ],
   },
   {
     label: 'chirag jethva kotlin',
@@ -48,7 +52,7 @@ const searches = [
   {
     label: 'chirag jethva pdf editor',
     words: ['pdf', 'editor', 'webview', 'pdfjs', 'pdf.js', 'annotate', 'sign', 'scanner', 'document'],
-    results: [post('pdf-editor-pdfjs-webview-android'), app('pdf-reader')],
+    results: [post('pdf-editor-pdfjs-webview-android'), page('/blog', 'Dev Notes — Chirag Jethva', 'Technical articles on Android: dialers, PDF editing, release tooling and more.')],
   },
 ]
 const TABS = [

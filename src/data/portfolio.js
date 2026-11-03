@@ -17,14 +17,14 @@ export const profile = {
   role: 'Android Developer',
   roles: ['Android Developer', 'Kotlin & Jetpack Compose', 'Shipping apps to Google Play', 'Clean Architecture fan'],
   tagline:
-    'I build and ship Android apps people use every day — dialers, SMS messengers, galleries, calendars and a full PDF editor.',
+    'I build and ship Android apps people use every day — dialers, contacts, a photo vault, an AI video generator, a fashion marketplace and everyday tools.',
   location: 'India',
   email: 'chiragjethvaofficial@gmail.com',
   resumeUrl: withBase(''), // e.g. withBase('/resume.pdf') after adding public/resume.pdf
   availableForWork: true,
   avatar: withBase(''), // e.g. withBase('/images/avatar.webp') after adding the photo; '' shows initials
   shortBio:
-    `Android developer working in Kotlin and Jetpack Compose. I have shipped ${liveCount} apps to Google Play — from default dialers and SMS clients that take over core phone roles, to media galleries and productivity tools.`,
+    `Android developer working in Kotlin and Jetpack Compose. I have shipped ${liveCount} apps to Google Play — from default dialers that take over core phone roles, to an AI video generator, a fashion marketplace, a photo vault and everyday tools.`,
   bio: [
     'I build native Android apps end to end: architecture, UI, background work, monetization and release. Most of my work lives on Google Play, where apps have to be fast, stable and pass strict policy review.',
     'A lot of it sits close to the platform — replacement phone dialers built on InCallService and CallScreeningService, default SMS/MMS messengers, exact-alarm scheduling, home-screen widgets, and media apps that handle Android 14 partial photo access.',

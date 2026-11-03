@@ -11,7 +11,7 @@ The file name is the slug and the URL (`/projects/<slug>`). Don't rename a publi
 | Field | Required | Rules |
 | --- | --- | --- |
 | `title` | yes | Public app name, as on Google Play |
-| `type` | yes | `Messaging` · `Dialer & Contacts` · `Gallery & Media` · `Productivity` · `Social` |
+| `type` | yes | `Messaging` · `Dialer & Contacts` · `Gallery & Media` · `Productivity` · `Lifestyle` · `Social` |
 | `status` | yes | `live` (on Google Play) · `completed` (finished, unpublished) · `in-progress` |
 | `featured` | no | `true` shows the app on the home page. Keep exactly 4 featured. |
 | `order` | no | Sort position within its status group (in progress → live → completed) |
@@ -31,7 +31,7 @@ The body is the case study (`## Overview`, `## How it works`, `## Architecture`,
 **Adding an app:**
 
 1. Save the icon as `public/images/apps/<slug>.png`, then run `npm run icons`.
-2. Create `content/projects/<slug>.md`, using an existing file such as `phone-call.md` as a template.
+2. Create `content/projects/<slug>.md`, using an existing file such as `phone-dialer-contacts-calls.md` as a template.
 3. For live apps, run `npm run screenshots -- <slug>` and `npm run play-meta -- <slug>`.
 4. Run `npm run check`.
 
@@ -65,7 +65,7 @@ Each file is one tab of the home page's "Modern Android, in code" showcase.
 | `file` | yes | File name shown in the editor bar |
 | `caption` | yes | 10–140 characters |
 | `order` | no | Tab order |
-| `relatedProjects` | yes | 1–4 existing project slugs |
+| `relatedProjects` | no | Up to 4 existing project slugs that really use this code (the "used in" chips) |
 | `preview` | no | Interactive mock from `src/components/showcase/` (`compose-filter`) |
 | `notes` | no | Up to 6 `{ line, text }` items explaining specific lines (1-based) |
 
