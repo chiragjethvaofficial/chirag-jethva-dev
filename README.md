@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://chiragjethvaofficial.github.io/chirag-jethva-dev/">
+<a href="https://chiragjethvaofficial.github.io/">
   <img src="public/og.png" alt="Chirag Jethva, Android developer portfolio" width="100%" />
 </a>
 
@@ -8,7 +8,7 @@
 
 **Android developer · Kotlin & Jetpack Compose · apps live on Google Play**
 
-[![Deploy](https://img.shields.io/github/actions/workflow/status/chiragjethvaofficial/chirag-jethva-dev/deploy.yml?branch=main&label=deploy&logo=githubactions&logoColor=white)](https://github.com/chiragjethvaofficial/chirag-jethva-dev/actions)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/chiragjethvaofficial/chiragjethvaofficial.github.io/deploy.yml?branch=main&label=deploy&logo=githubactions&logoColor=white)](https://github.com/chiragjethvaofficial/chiragjethvaofficial.github.io/actions)
 ![Vue](https://img.shields.io/badge/Vue_3-35495E?logo=vuedotjs&logoColor=4FC08D)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-0F172A?logo=tailwindcss&logoColor=38BDF8)
@@ -99,7 +99,7 @@ reports the exact file and field of any problem.
 The public URL is set in one place, [`src/data/site.js`](src/data/site.js):
 
 ```js
-export const SITE_URL = 'https://chiragjethvaofficial.github.io/chirag-jethva-dev'
+export const SITE_URL = 'https://chiragjethvaofficial.github.io'
 ```
 
 The Vite base path, router, asset URLs, canonical links, sitemap, feeds and PWA scope all derive from it. To move to a
