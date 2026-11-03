@@ -1,6 +1,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { getPost, getProject, profile, SITE_URL, socials, statuses } from '../../data/portfolio'
+import { withBase } from '../../data/site.js'
 import AppIcon from '../AppIcon.vue'
 
 // How a link to the site unfurls in X, WhatsApp and Slack (blog: find-chirag-jethva-android-developer).
@@ -48,7 +49,8 @@ const pageIndex = ref(0)
 const platform = ref('x')
 const page = computed(() => pages[pageIndex.value])
 const url = computed(() => SITE_URL + page.value.path)
-const image = computed(() => SITE_URL + page.value.image)
+// Loaded from this site's own origin so the preview works locally as well as in production.
+const image = computed(() => withBase(page.value.image))
 const xUrl = socials.find((s) => s.icon === 'x')?.url
 const xHandle = xUrl ? '@' + new URL(xUrl).pathname.split('/').filter(Boolean)[0] : DOMAIN
 
